@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get "/info", to: "prices#prices"
+  post "/login", to: "users#login"
+  post "/show", to: "users#show"
+  post "/register", to: "users#register"
+  post "/buy", to: "operations#buy"
+  post "/sell", to: "operations#sell"
+  post "/details", to: "operations#details"
+  post "/historial", to: "operations#historial"
+
 end
